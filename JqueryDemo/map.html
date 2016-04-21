@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8" />
+  <script src="scripts/jquery-2.2.1.min.js"></script>
+  <script>
+    $(document).ready(function () {
+
+      alert($('li').map(function (index, element) {
+        if ($(element).text() != 'PHP')
+          return $(element).text();
+      }).get().join('|'));
+    });
+  </script>
+</head>
+<body>
+  <ul>
+    <li>C#</li>
+    <li>PHP</li>
+    <li>Java</li>
+    <li>Python</li>
+    <li>C++</li>
+  </ul>
+</body>
+</html>

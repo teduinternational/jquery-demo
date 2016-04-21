@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script src="scripts/jquery-2.2.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+            var employeeJson = [{
+                "firstName": "TEDU",
+                "lastName": "App",
+                "email": "tedu@gmail.com",
+                "age": 14
+            },
+            {
+                "firstName": "John",
+                "lastName": "Ab",
+                "email": "john@gmail.com",
+                "age": 16
+            }
+            ];
+            //var result = '';
+            //$.each($(employeeJson), function (i, item) {
+            //    result += "firstName: " + item.firstName + ". last name: " + item.lastName + "<br>";
+            //});
+            $('#result').html(JSON.stringify(employeeJson));
+
+            var content = $('#result').html();
+            var objectJson = JSON.parse(content);
+            
+        });
+    </script>
+</head>
+<body>
+    <div id="result"></div>
+</body>
+</html>

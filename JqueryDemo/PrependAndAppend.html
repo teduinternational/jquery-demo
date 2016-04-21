@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8" />
+  <script src="scripts/jquery-2.2.1.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('#spanExisted').prepend('<b>Programming</b> ');
+      $('div').append(' <b>Tutorial</b>');
+      //$('div').append($('#spanExisted'));
+      //$('<b>Programming</b> ').prependTo('div');
+    });
+  </script>
+</head>
+<body>
+  <span id="spanExisted"> Course</span>
+  <div>Jquery</div>
+  <div>C#</div>
+  <div>PHP</div>
+</body>
+</html>
